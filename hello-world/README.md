@@ -40,5 +40,4 @@ For a more detailed description of the workspace and project file structure cons
 When the command `ng serve` is ran the execution comes to the `main.ts` file where the app module is bootstrapped. Then the execution goes to `app.module.ts` that bootstraps internally the app component. The app component is composed by the HTML template `app.component.html` and a class `app.component.ts`.
 
 So in summary the execution flow of a simple application containing only root module and root component is:
-
 ```main.ts → app.module.ts → app.component.ts + app.component.html```
