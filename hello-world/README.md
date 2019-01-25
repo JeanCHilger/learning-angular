@@ -19,7 +19,10 @@ Some notes taken from the video classes.
 * A component controls a portion of the view.
 * Every Angular application has at least one component wich is the RootComponent (AppComponent by convention).
 * The other components are nested inside the AppComponent.
-* Each component will have a HTML template (view) and a class (controls the logic of the view).
+* Each component is composed of three parts:
+    * Tamplate: represents the view being the user interface. Created (mostly) with HTML.
+    * Class: code to support the view controlling its logic. Created with typescript.
+    * Metadata: Information that tells to angular if the class is a component or just a regular class. It tells also where get the major building blocks needed. Created using the `@Component` decorator.
 
 ### Services
 

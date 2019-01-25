@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
+@Component({    // metadata
+  selector: 'app-root', // custom HTML tag that represents this component
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'hello-world';
 }
