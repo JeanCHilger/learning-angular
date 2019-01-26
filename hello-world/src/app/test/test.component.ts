@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-test', // class- selector: '.a-t' attribute- selector: '[a-t]'
-    //templateUrl: './test.component.html', // or:
-    template: `
+	selector: 'app-test', // class- selector: '.a-t' attribute- selector: '[a-t]'
+	//templateUrl: './test.component.html', // or:
+	template: `
         <div>
             Inline template
         </div>`,
-    //styleUrls: ['./test.component.css'] // or
-    styles: [`
+	//styleUrls: ['./test.component.css'] // or
+	styles: [`
         div {
             color: red;
         }
@@ -16,9 +16,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() { }
 
 }

@@ -42,5 +42,20 @@ For a more detailed description of the workspace and project file structure cons
 
 When the command `ng serve` is ran the execution comes to the `main.ts` file where the app module is bootstrapped. Then the execution goes to `app.module.ts` that bootstraps internally the app component. The app component is composed by the HTML template `app.component.html` and a class `app.component.ts`.
 
-So in summary the execution flow of a simple application containing only root module and root component is:
-```main.ts → app.module.ts → app.component.ts + app.component.html```
+So in summary the execution flow of a simple application containing only root module and root component is: `main.ts → app.module.ts → app.component.ts + app.component.html`.
+
+## Interpolation
+
+The simplest way to bind data from a class to the template. Consists in a syntax of a property or expression within double curly braces (`{{expression}}`). With interpolation, Angular will evaluate the content inside the curly braces and "display" it.
+
+## Property binding
+
+Important to know is that attributes and properties are different. Attributes are defined in HTML and can't be changed, properties are defined in DOM and can be changed.
+
+The syntax is a HTML property (say `id`) enclosed with square brackets then `=` then the class property name (as string):
+```
+<tag [HTML attr name]="property" >
+```
+The same works using bind- before the attribute name without square brackets
+
+For this porpuse interpolation could be used but interpolation works only with string values and there is some HTML attributes that demands boolean type values.
