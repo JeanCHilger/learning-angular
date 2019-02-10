@@ -1,6 +1,16 @@
 <!-- $0.getAttribute("value") - HTML attribute
 $0.value - DOM property -->
 
-<input [id]="myId" type="text" name="" value="John Doe">
+<!-- Class 6 -->
+<!-- <input [id]="myId" type="text" name="" value="John Doe">
 
-<input [disabled]="isDisabled" id="{{myId}}" type="text" name="" value="John Doe">
+<input [disabled]="isDisabled" id="{{myId}}" type="text" name="" value="John Doe"> -->
+
+<!-- Class 9 -->
+<h2>
+    Welcome {{name}}
+</h2>
+
+<button (click)="onClick($event)">Greet</button>
+<button (click)="greeting='Welcome to the jungle.'">Greet</button>
+{{greeting}}
